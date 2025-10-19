@@ -15,7 +15,7 @@
  *    - Replace 'GOOGLE_ADVICE_SHEET_GRID_ID' with this value.
  * 3. The sheet must have these headers: `type`, `subtype`, `text`, `criteria`.
  */
-export const GOOGLE_SHEET_ID = (process.env.GOOGLE_SHEET_ID as string) || '';
+export const GOOGLE_SHEET_ID = (import.meta.env.VITE_GOOGLE_SHEET_ID as string) || '';
 const GOOGLE_ADVICE_SHEET_GRID_ID = '0'; // This is for the advice data sheet. '0' is the first sheet.
 
 // The final URL to fetch the advice data as a CSV file.
