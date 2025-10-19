@@ -36,8 +36,10 @@ jobs:
     - name: Build
       run: npm run build
       env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        VITE_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        VITE_GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        VITE_ADSENSE_CLIENT_ID: ${{ secrets.VITE_ADSENSE_CLIENT_ID }}
+        VITE_ADSENSE_SLOT_ID: ${{ secrets.VITE_ADSENSE_SLOT_ID }}
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
